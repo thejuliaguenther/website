@@ -16,7 +16,7 @@ app.jinja_env.undefined = StrictUndefined
 #     return render_template("index.html")
 
 @app.route('/')
-@app.route('/about')
+@app.route('/skills')
 @app.route('/projects')
 @app.route('/contact')
 def render_pages(**kwargs):
