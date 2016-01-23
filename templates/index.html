@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="personalSiteApp">
 <head>
     <title> Julia Guenther: Software Engineer</title>
     <meta charset="UTF-8">
     
-    
-   
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.0/united/bootstrap.min.css"
+          rel="stylesheet">
 
-        <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-   <!--  <link rel="stylesheet" href="personal_website/static/css/grayscale.css">
-    <link rel="stylesheet" href="personal_website/static/css/bootstrap.css">
-    <link rel="stylesheet" href="personal_website/static/css/bootstrap.min.css"> -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-route.js"></script>
+    <script type ="text/javascript" src="/static/js/personalSiteApp.js"></script>
     
 </head>
 <body>
@@ -36,12 +31,20 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#/">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="#/about">About</a></li>
-        <li><a href="#/projects">Projects</a></li>
-        <li><a href="#/contact">Contact</a></li>
+        <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     </div>
 </div> 
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div ng-view></div>
+  </div>
+</div>
 </body>
 </html>
