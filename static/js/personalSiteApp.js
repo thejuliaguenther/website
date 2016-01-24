@@ -1,4 +1,4 @@
-var personalSiteApp = angular.module("personalSiteApp", ['ngRoute']);
+var personalSiteApp = angular.module('personalSiteApp', ['ngRoute']);
     
 personalSiteApp.config(['$routeProvider', function ($routeProvider) {
        
@@ -21,3 +21,7 @@ personalSiteApp.config(['$routeProvider', function ($routeProvider) {
     })
         
 }]);
+
+// personalSiteApp.directive('sun-burst', function($parse){
+    
+// })
