@@ -7,23 +7,16 @@ app.secret_key = "HyrVFG2jcVlpN0qH"
 
 app.jinja_env.undefined = StrictUndefined
 
-# @app.route('/', methods=["GET"])
-# def index():
-#     """
-#     Renders the main page, index.html, from which all routes are 
-#     served using Angular.js
-#     """
-#     return render_template("index.html")
-
 @app.route('/')
 @app.route('/skills')
 @app.route('/projects')
 @app.route('/contact')
 def render_pages(**kwargs):
+    """
+    Serves the appropriate HTML page for each route
+    """
     return make_response(open('templates/index.html').read())
 
 
 if __name__ == "__main__":
-    
-
     app.run(debug = True)
